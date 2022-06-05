@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} {% endblock %}</h1>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8239103031885616"
+     crossorigin="anonymous"></script>
+
+<script type="text/javascript">		
+		var counter = 10;
+		function countDown(){
+			if(counter >= 0){
+				document.getElementById("timer").innerHTML = counter;
+			} else {
+				download();
+				return;
+			}
+			counter -=1;
+
+			var counter2 = setTimeout("countDown()",1000);
+			return;
+		}
+
+		function download(){
+			    document.getElementById("link").innerHTML = "<a href='/go/{{ link }}'>link asli</a>";
+		}
+
+	</script>
+</head>
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8239103031885616"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8239103031885616"
+     data-ad-slot="2079601027"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+<body onload="countDown();">
+
+
+	<em>Link asli  akan muncul dalam <span id="timer"></span> detik</em>
+
+	<br>
+	
+	=> <span id="link"></span>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8239103031885616"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8239103031885616"
+     data-ad-slot="2079601027"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</body>
+</html>
+
+{% endblock %}
